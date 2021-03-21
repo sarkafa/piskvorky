@@ -1,0 +1,59 @@
+body {
+  margin: 80px;
+  background-image: linear-gradient(#615dad, #ffc8da);
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  font-weight: 200;
+}
+
+.box {
+  display: flex;
+  background-color: #283e50;
+  color: white;
+  width: 320px;
+  flex-direction: column;
+  align-items: stretch;
+  margin: auto;
+  overflow: hidden;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+.box img {
+  overflow: hidden;
+}
+
+.telo {
+  text-align: center;
+  padding: 10px;
+}
+
+.tlacitko {
+  line-height: 45px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+}
+
+.zelene {
+  background-color: #1fcca4;
+  margin-bottom: 1px;
+}
+
+.modre {
+  background-color: #0197f6;
+}
+
+.zelene:hover {
+  background-color: #1cbb96;
+}
+
+.modre:hover {
+  background-color: #0090e9;
+}
