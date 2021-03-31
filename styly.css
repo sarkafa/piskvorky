@@ -17,15 +17,21 @@ h1 {
 .box {
   background-color: #283e50;
   color: white;
-  width: 320px;
+  width: 400px;
+  flex-grow: 1;
   flex-direction: column;
   align-items: stretch;
   margin: auto;
   overflow: hidden;
-  border-top-left-radius: 2%;
-  border-top-right-radius: 2%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
+}
+
+.pravidla .box {
+  width: auto;
+  max-width: 600px;
 }
 
 .telo {
@@ -56,4 +62,48 @@ h1 {
 
 .modre:hover {
   background-color: #0090e9;
+}
+
+ol li {
+  margin: 15px 30px;
+}
+
+ol {
+  margin-bottom: 40px;
+}
+
+.miniatura {
+  width: 1em;
+  height: 1em;
+  filter: invert(100%);
+}
+
+figure img {
+  max-width: 100%;
+}
+
+figure {
+  margin-bottom: 30px;
+}
+
+figcaption {
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .pravidla .galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .pravidla figure {
+    flex-basis: 40%;
+    margin: 0px;
+    flex-grow: 0;
+    margin-bottom: 25px;
+  }
+}
+
+@media (min-width: 900px) {
 }
