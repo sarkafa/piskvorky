@@ -29,7 +29,7 @@ h1 {
   font-size: 15px;
 }
 
-.pravidla .box {
+.box .index {
   width: auto;
   max-width: 600px;
 }
@@ -91,14 +91,15 @@ figcaption {
 }
 
 @media (min-width: 700px) {
-  .pravidla .galerie {
+  .galerie {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
   }
 
-  .pravidla figure {
-    flex-basis: 40%;
+  figure {
+    flex-basis: calc((100% - 50px) / 2);
+    /* flex-basis: 40%; */
     margin: 0px;
     flex-grow: 0;
     margin-bottom: 25px;
@@ -106,4 +107,4 @@ figcaption {
 }
 
 @media (min-width: 900px) {
-nd-color: #0090e9;
+}
