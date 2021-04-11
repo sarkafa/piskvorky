@@ -18,7 +18,6 @@ h1 {
   background-color: #283e50;
   color: white;
   width: 400px;
-  flex-grow: 1;
   flex-direction: column;
   align-items: stretch;
   margin: auto;
@@ -29,9 +28,11 @@ h1 {
   font-size: 15px;
 }
 
-.box .index {
-  width: auto;
-  max-width: 600px;
+.pravidla {
+  /* width: auto; */
+  width: 800px;
+  max-width: 100%;
+  flex-grow: 1;
 }
 
 .telo {
@@ -101,7 +102,7 @@ figcaption {
     flex-basis: calc((100% - 50px) / 2);
     /* flex-basis: 40%; */
     margin: 0px;
-    flex-grow: 0;
+    flex-grow: ;
     margin-bottom: 25px;
   }
 }
