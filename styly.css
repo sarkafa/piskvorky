@@ -4,10 +4,18 @@ body {
   background-attachment: fixed;
 }
 
-h1 {
+.nadpis.index {
   font-family: 'Lobster', cursive;
   font-size: 40px;
   font-weight: 200;
+}
+
+.hra__nadpis {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+  font-weight: 200;
+  color: white;
+  text-align: center;
 }
 
 .obrazek {
@@ -33,6 +41,7 @@ h1 {
   width: 800px;
   max-width: 100%;
   flex-grow: 1;
+  margin: auto;
 }
 
 .telo {
@@ -50,6 +59,9 @@ h1 {
 
 .zelene {
   background-color: #1fcca4;
+}
+
+.tlacitko.zelene {
   margin-bottom: 1px;
 }
 
@@ -57,11 +69,13 @@ h1 {
   background-color: #0197f6;
 }
 
-.zelene:hover {
+.zelene:hover,
+.zelene:focus {
   background-color: #1cbb96;
 }
 
-.modre:hover {
+.modre:hover,
+.modre:focus {
   background-color: #0090e9;
 }
 
@@ -89,6 +103,91 @@ figure {
 
 figcaption {
   text-align: center;
+}
+
+.hra__box {
+  margin: auto;
+  max-width: 80vmin;
+}
+
+.hra__domecek {
+  margin-right: 5px;
+}
+
+.hra__restart,
+.hra__domecek {
+  border-radius: 5%;
+  padding: 5px;
+}
+
+#h_r,
+#h_d {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.hra__telo {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.hra__text {
+  font-family: 'Roboto', sans-serifm;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding-right: 5px;
+}
+
+.hra__hraci_pole {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: auto;
+}
+
+.hra__boxik {
+  border: solid black 1px;
+  border-radius: 0px;
+  width: 10%;
+  aspect-ratio: 1/1;
+  flex-basis: 10%;
+  padding: 0px;
+  opacity: 0.5;
+}
+
+.hra__boxik:hover,
+.hra__boxik:focus {
+  opacity: 0.7;
+}
+
+.hra__znak {
+  filter: invert(100%);
+  width: 20px;
+}
+
+.telo__prvni {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.hra__text {
+  display: inline-block;
+}
+
+.hra__domecek,
+.hra__restart {
+  border-radius: 5%;
+  width: 20px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
 }
 
 @media (min-width: 700px) {
